@@ -1,0 +1,22 @@
+2026-04-27 11:17:48,360 - INFO - Starting data ingestion...
+2026-04-27 11:17:48,361 - INFO - Reading file: appointments.csv
+2026-04-27 11:17:56,169 - INFO - Schema for appointments:
+2026-04-27 11:17:56,174 - INFO - Preview for appointments:
+2026-04-27 11:18:00,303 - INFO - Number of rows in appointments: 200
+2026-04-27 11:18:00,304 - INFO - Reading file: patients.csv
+2026-04-27 11:18:00,744 - INFO - Schema for patients:
+2026-04-27 11:18:00,746 - INFO - Preview for patients:
+2026-04-27 11:18:01,327 - INFO - Number of rows in patients: 50
+2026-04-27 11:18:01,328 - INFO - Reading file: doctors.csv
+2026-04-27 11:18:01,714 - INFO - Schema for doctors:
+2026-04-27 11:18:01,716 - INFO - Preview for doctors:
+2026-04-27 11:18:02,108 - INFO - Number of rows in doctors: 10
+2026-04-27 11:18:02,108 - INFO - Reading file: treatments.csv
+2026-04-27 11:18:02,403 - INFO - Schema for treatments:
+2026-04-27 11:18:02,405 - INFO - Preview for treatments:
+2026-04-27 11:18:02,756 - INFO - Number of rows in treatments: 200
+2026-04-27 11:18:02,756 - INFO - Reading file: billing.csv
+2026-04-27 11:18:03,023 - INFO - Schema for billing:
+2026-04-27 11:18:03,025 - INFO - Preview for billing:
+2026-04-27 11:18:03,311 - INFO - Number of rows in billing: 200
+2026-04-27 11:18:03,312 - INFO - Data ingestion completed.
