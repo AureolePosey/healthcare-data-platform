@@ -1,3 +1,4 @@
+# Importation des modules nécessaires
 import os
 from src.utils.spark_session import create_spark_session
 from src.utils.logger import setup_logger
@@ -5,6 +6,7 @@ from src.utils.config import RAW_DATA_PATH
 
 
 def ingest_data():
+    """Fonction principale pour ingérer les données depuis les fichiers CSV"""
     logger = setup_logger()
     spark = create_spark_session()
 
@@ -12,15 +14,11 @@ def ingest_data():
 
     dfs = {}
 
-    # récupérer tous les fichiers dans le dossier raw
     files = os.listdir(RAW_DATA_PATH)
 
     for file in files:
-        # ignorer les fichiers non CSV
         if file.endswith(".csv"):
             file_path = os.path.join(RAW_DATA_PATH, file)
-
-            # nom de la table = nom du fichier sans .csv
             table_name = file.replace(".csv", "")
 
             logger.info(f"Reading file: {file}")
@@ -40,7 +38,6 @@ def ingest_data():
             count = df.count()
             logger.info(f"Number of rows in {table_name}: {count}")
 
-            # stocker dans dictionnaire
             dfs[table_name] = df
 
     logger.info("Data ingestion completed.")
